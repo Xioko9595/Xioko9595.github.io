@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <title>鼠王</title>
+   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+   <div class="container">
+      <h1>記帳</h1>
+      <hr>
+      <div class="balance">
+         <h2>目前餘額：<span id="balance">0</span> 元</h2>
+      </div>
+      <form id="transaction-form">
+         <input type="text" id="description" placeholder="描述（如：午餐、薪水）" required />
+         <input type="number" id="amount" placeholder="金額" required />
+         <button type="submit">新增</button>
+      </form>
+      <ul id="transaction-list"></ul>
+  </div>
 
-   <h1>記帳</h1>
-   <hr>
-   <p>水餃</p>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
